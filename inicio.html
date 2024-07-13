@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Elas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><img src="logo.png" alt="Para Elas"></h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Empresas</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <section class="hero">
+                <div class="carousel">
+                    <div>
+                        <h2>Descubra empresas inclusivas</h2>
+                        <p>Encontre as melhores empresas para mulheres na tecnologia.</p>
+                        <a href="#" class="btn-primary">Comece Agora</a>
+                    </div>
+                    <div>
+                        <h2>Empresas comprometidas</h2>
+                        <p>Conheça empresas que valorizam a diversidade e inclusão.</p>
+                        <a href="#" class="btn-primary">Saiba Mais</a>
+                    </div>
+                    <div>
+                        <h2>Carreiras em destaque</h2>
+                        <p>Veja oportunidades de crescimento em empresas líderes.</p>
+                        <a href="#" class="btn-primary">Explore Carreiras</a>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="features">
+                <h2>Por que usar nossa plataforma?</h2>
+                <div class="feature-cards">
+                    <div class="card">
+                        <h3>Transparência</h3>
+                        <p>Veja como as empresas realmente tratam suas funcionárias.</p>
+                        <a href="transparencia.html" class="btn-secondary">Saiba Mais</a>
+                    </div>
+                    <div class="card">
+                        <h3>Crescimento</h3>
+                        <p>Encontre oportunidades de carreira em empresas que promovem o desenvolvimento.</p>
+                        <a href="crescimento.html" class="btn-secondary">Saiba Mais</a>
+                    </div>
+                    <div class="card">
+                        <h3>Feedback Real</h3>
+                        <p>Leia avaliações honestas de funcionárias atuais e anteriores.</p>
+                        <a href="feedback.html" class="btn-secondary">Saiba Mais</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Para Elas. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: true,
+            });
+        });
+    </script>
+</body>
+</html>
