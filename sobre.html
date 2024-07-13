@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Elas</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="sobre.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><img src="logo.png" alt="Para Elas"></h1>
+            <nav>
+                <ul>
+                    <li><a href="inicio.html">Início</a></li>
+                    <li><a href="#">Empresas</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="hero">
+        <h1>Quem Somos Nós</h1>
+        <p>De mulheres para mulheres</p>
+        <button id="scrollToBottom"><img src="A.webp" width="400px" alt="Ícone"></button>
+    </div>
+    <div class="challenges">
+        <div class="challenge">
+            <img src="Bibi.jpeg" alt="Core & Abs Challenge">
+            <h3>Bianca Costa Galvão</h3>
+            <p>20 Anos</p>
+            <p>Estudante do Bacharelado em Ciência da Computação IME-USP</p>
+        </div>
+        <div class="challenge">
+            <img src="Lena.png" alt="Upper Body Challenge">
+            <h3>Helena Baptista Reis</h3>
+            <p>No Time Limit</p>
+            <p>Estudante do Bacharelado em Ciências Moleculares USP</p>
+        </div>
+        <div class="challenge">
+            <img src="Nat.jpeg" alt="Movement Challenge">
+            <h3>Nathália Yukimi Uchiyama Tsuno</h3>
+            <p>19 Anos</p>
+            <p>Estudante do Bacharelado em Ciência da Computação IME-USP</p>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Para Elas. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var scrollToBottomBtn = document.getElementById('scrollToBottom');
+        
+            scrollToBottomBtn.addEventListener('click', function() {
+                var scrollHeight = document.documentElement.scrollHeight;
+                var windowHeight = window.innerHeight;
+                var scrollPosition = scrollHeight - windowHeight;
+        
+                window.scrollTo({
+                    top: scrollPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+        </script>
+</body>
+</html>
