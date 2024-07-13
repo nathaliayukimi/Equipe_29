@@ -34,8 +34,9 @@ header {
     background: var(--cor-intermediaria);
     color: var(--cor-de-destaque);
     font-weight: 700;
-    padding-top: 15px;
-    padding-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    padding-left: 100px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -46,7 +47,7 @@ header a {
     color: var(--cor-de-destaque);
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 header ul {
@@ -62,7 +63,7 @@ header li {
 header h1 {
 	font-family: var(--fonte-destaque);
     float: left;
-    margin-top: 0;
+    margin-top: 20px;
     margin-bottom: 0;
     font-size: 24px;
 }
@@ -75,10 +76,9 @@ header h1 img {
 
 header nav {
     float: right;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
-/* Fix for body content */
 main {
     padding-top: 100px;
 }
@@ -102,13 +102,14 @@ main {
     font-size: 1.2em;
 }
 
-.carousel div {
+.carousel{
+    width: 100%;
     height: 100%;
 }
 
 .carousel-slide {
     position: relative;
-    text-align: left; /* Alinhamento do texto à esquerda */
+    text-align: left; 
 }
 .carousel img {
     width: 100%;
@@ -120,12 +121,12 @@ main {
     position: absolute;
     top: 0;
     left: 0;
-    width: 40%; /* Ajuste conforme necessário */
+    width: 40%;
     height: 100%;
-    background: rgba(255, 111, 97, 0.5); /* Fundo vermelho transparente */
+    background: rgba(150, 15, 101, 0.5); 
     color: white;
     padding: 20px;
-    border-radius: 5px 0 0 5px; /* Ajusta os cantos arredondados */
+    border-radius: 10px;
 }
 
 .carousel-overlay h2 {
@@ -144,27 +145,30 @@ main {
     color: white;
     text-decoration: none;
     padding: 10px 20px;
-    background: #FF6F61;
+    background: var(--cor-intermediaria);
     border-radius: 5px;
 }
 
 .custom-dots {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 2px;
+    margin-bottom: 20px;
 }
 
-.dot {
-    height: 10px;
-    width: 10px;
+.dot-btn {
     margin: 0 5px;
-    background-color: #9013FE;
-    border-radius: 50%;
-    display: inline-block;
-    transition: transform 0.3s ease;
+    height: 10px;
+    width: 50px;
+    border-radius: 5%;
+    background-color: var(--cor-botoes);
 }
 
-.dot.active {
-    transform: scale(1.5); /* Aumenta o tamanho do ponto quando ativo */
+.dot-btn:hover {
+    background-color: var(--cor-de-destaque); /* Cor ao passar o mouse */
+}
+
+.dot-btn.active {
+    background-color: var(--cor-de-destaque); /* Aumenta o tamanho do ponto quando ativo */
 }
 
 .btn-primary {
