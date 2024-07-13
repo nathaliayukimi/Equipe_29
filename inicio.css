@@ -1,0 +1,167 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #4A4A4A;
+    background-color: #f5f5f5;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: #4A90E2;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 0px;
+    border-bottom: #9013FE 4px solid;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header h1 {
+    float: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+header h1 img {
+    height: 70px; /* Ajuste a altura da imagem conforme necessário */
+    width: auto;  /* Mantém a proporção da imagem */
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+/* Fix for body content */
+main {
+    padding-top: 100px;
+}
+
+/* Hero Section */
+.hero {
+    background: #ED324C;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    border-bottom: #74279E 4px solid;
+}
+
+.carousel div {
+    padding: 20px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.btn-primary {
+    background: #FF6F61;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 1.1em;
+}
+
+/* Features Section */
+.features {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #f8f8f8;
+    border-bottom: #FF6F61 4px solid;
+}
+
+.features h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #4A90E2;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.card {
+    background: #74279E;
+    padding: 20px;
+    border-radius: 5px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.card p {
+    font-size: 1em;
+    color: white;
+}
+
+.btn-secondary {
+    background: #9013FE;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background: #4A4A4A;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
