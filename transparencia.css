@@ -1,0 +1,222 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-clara: #fff0f6;  
+    --cor-intermediaria: #EDAFB8; 
+    --cor-de-destaque: #960f65; 
+    --cor-botoes: #3883ac;   
+    --fonte-destaque: "Rubik Mono One";
+    --fonte-texto: "League Spartan";
+}
+
+body {
+    font-family: var(--fonte-texto);
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--cor-de-destaque);
+    background-color: var(--cor-clara);
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: var(--cor-intermediaria);
+    color: var(--cor-de-destaque);
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+}
+
+header a {
+    color: var(--cor-de-destaque);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding: 7px 15px;
+    border-radius: 0.3em;
+}
+
+header a:hover{
+    background: var(--cor-de-destaque);
+    color: var(--cor-clara);
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header h1 {
+	font-family: var(--fonte-destaque);
+    float: left;
+    margin-top: 0px;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+header h1 img {
+    margin-left: 100px;
+    height: 70px; /* Ajuste a altura da imagem conforme necessário */
+    width: auto;  /* Mantém a proporção da imagem */
+}
+
+header nav {
+    float: right;
+    margin-top: 20px;
+}
+
+main {
+    padding-top: 0px;
+}
+
+/* Seção de Transparência */
+.transparency {
+    padding-top: 50px;
+}
+
+.transparency-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Garante que o texto e a imagem fiquem lado a lado */
+    height: 100vh;
+    padding: 20px;
+}
+
+.transparency-section .text, .transparency-section .image {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+}
+
+.transparency-section .text {
+    max-width: 50%; /* Garante que o texto não ocupe mais que a metade da largura */
+}
+
+.transparency-section .image {
+    max-width: 50%; /* Garante que a imagem não ocupe mais que a metade da largura */
+    text-align: center; /* Centraliza a imagem verticalmente */
+}
+
+.transparency-section .image img {
+    width: 80%; /* Faz com que a imagem ocupe toda a largura disponível */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px;
+}
+
+.transparency-section .text h2, .transparency-section .text h3 {
+    font-family: var(--fonte-destaque);
+    color: var(--cor-de-destaque);
+}
+
+.transparency-section .text p, .transparency-section .text ul {
+    font-size: 1.2em;
+    color: var(--cor-de-destaque);
+}
+
+.transparency-section .text ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.transparency-section .text ul li {
+    margin-bottom: 10px;
+}
+
+.transparency-section .btn-primary {
+    background: var(--cor-botoes);
+    color: var(--cor-clara);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    display: inline-block;
+    font-size: 1.1em;
+    margin-top: 20px;
+}
+
+.transparency-section .btn-primary:hover {
+    background: var(--cor-de-destaque);
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Empilha os elementos em telas menores */
+    }
+
+    .transparency-section .text, .transparency-section .image {
+        flex: auto; /* Ocupa o espaço disponível */
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .transparency-section .text {
+        max-width: 100%; /* Texto ocupa toda a largura em telas menores */
+    }
+
+    .transparency-section .image {
+        max-width: 100%; /* Imagem ocupa toda a largura em telas menores */
+    }
+}
+
+/* Exemplos */
+.transparency-section .examples {
+    margin-top: 20px;
+}
+
+.transparency-section .example {
+    background: var(--cor-intermediaria);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.transparency-section .example h4 {
+    font-size: 1.5em;
+    color: var(--cor-de-destaque);
+    margin-bottom: 10px;
+}
+
+.transparency-section .example p {
+    font-size: 1em;
+    color: var(--cor-de-destaque);
+}
+
+.transparency-section.invertido {
+    padding-top: 0%;
+    flex-direction: row-reverse; /* Inverte a direção do flex para colocar imagem à esquerda e texto à direita */
+}
+
+.transparency-section:nth-child(3) {
+    padding-top: 0%;
+    margin-top: 100px; /* Ajuste o valor conforme necessário */
+}
+
+
+/* Footer */
+footer {
+    background: var(--cor-de-destaque);
+    color: var(--cor-clara);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
