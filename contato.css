@@ -1,0 +1,225 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Ubuntu Mono";
+    font-weight: 400;
+    line-height: 1.6;
+    color: #4A90E2;
+    background-color: #f5f5f5;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background: #4A90E2;
+    color: white;
+    font-weight: 700;
+    padding-top: 15px;
+    padding-bottom: 0px;
+    border-bottom: #9013FE 4px solid;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header h1 {
+	font-family: "Rubik Mono One";
+    float: left;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+header h1 img {
+    height: 70px; /* Ajuste a altura da imagem conforme necessário */
+    width: auto;  /* Mantém a proporção da imagem */
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+/* Fix for body content */
+main {
+    padding-top: 100px;
+}
+
+/* Hero Section */
+.hero {
+	font-family: "Rubik Mono One";
+    background: #ED324C;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+    border-bottom: #74279E 4px solid;
+}
+
+.carousel div {
+    padding: 20px;
+}
+
+.hero h2 {
+	font-family: "Rubik Mono One";
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.btn-primary {
+    background: #FF6F61;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 1.1em;
+}
+
+/* Features Section */
+.features {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #f8f8f8;
+    border-bottom: #FF6F61 4px solid;
+}
+
+.features h2 {
+	font-family: "Rubik Mono One";
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #74279E;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.card {
+    background: #74279E;
+    padding: 20px;
+    border-radius: 20px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.card p {
+    font-size: 1em;
+    color: white;
+}
+
+.btn-secondary {
+    background: #9013FE;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 25px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#cont{
+    font-family: "Ubuntu Mono";
+    font-size: 2.5em;
+    font-weight: 900;
+    line-height: 1.6;
+    color: #74279E;
+    padding-left: 30px;
+    padding-top: 30px;
+    background-color: #f5f5f5;
+}
+
+form {
+    margin: 40px 0;
+    width: 100%; /* Garante que o formulário ocupe toda a largura do contêiner */
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+form label, legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin:20px 0;
+}
+
+.enviar{
+    width:40%;
+    padding: 15px 0;
+    background: #FF6F61;
+    color:white;
+    font-size: 18px;
+    border:none;
+    border-radius: 5px;
+    transition:1s background;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background:#ED324C;
+    transform: scale(1.2);
+}
+
+/* Footer */
+footer {
+    background: #4A4A4A;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}

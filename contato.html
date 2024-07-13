@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Para Elas</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="contato.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1><img src="logo.png" alt="Para Elas"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">Início</a></li>
+                        <li><a href="#">Empresas</a></li>
+                        <li><a href="#">Sobre Nós</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+    <main>
+        <h2 id="cont">Tem interesse em nos contatar?</h2>
+        <form>
+            <label for="nomesobrenome">Nome e Sobrenome</label>
+            <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" class="input-padrao" placeholder="seuemail@dominio.com" required>
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" class="input-padrao" placeholder="(XX) XXXXX-XXXX" required/>
+            
+            <label for="mensagem">Mensagem</label>
+            <textarea cols="30" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+            <fieldset>
+                <legend>Como prefere o nosso contato?</legend>
+                
+                <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email" checked> Email</label>
+
+                <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+
+                <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp"> WhatsApp</label>
+                
+            </fieldset>
+
+            <label class="checkbox"><input type="checkbox" checked> Gostaria de receber nossas novidades por email?</label>
+
+            <input type="submit" class="enviar">
+        </form>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Para Elas. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
