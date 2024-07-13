@@ -1,24 +1,21 @@
-
 $(document).ready(function(){
     $('.carousel').slick({
         autoplay: true,
-        autoplaySpeed: 500,
-        dots: true,
+        autoplaySpeed: 1000, // Ajuste conforme necessário
+        dots: false, // Desativar os pontos padrão
         arrows: false,
-        customPaging : function(slider, i) {
-            var title = $(slider.$slides[i]).find('img').attr('alt');
-            return '<span class="dot" role="button" tabindex="0"></span>';
-        },
         appendDots: $('.custom-dots')
     });
 
-$('.custom-dots .dot').on('click', function() {
-    var slideIndex = $(this).index();
-    $('.carousel').slick('slickGoTo', slideIndex);
-});
+    // Captura o clique nos botões e navega para o slide correspondente
+    $('.dot-btn').on('click', function() {
+        var slideIndex = $(this).data('slide');
+        $('.carousel').slick('slickGoTo', slideIndex);
+    });
 
-$('.carousel').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-    $('.dot').removeClass('active');
-    $('.dot').eq(nextSlide).addClass('active');
-});
+    // Atualiza a classe ativa nos botões ao mudar de slide
+    $('.carousel').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        $('.dot-btn').removeClass('active');
+        $('.dot-btn[data-slide="' + nextSlide + '"]').addClass('active');
+    });
 });
