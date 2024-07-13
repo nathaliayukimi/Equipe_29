@@ -7,7 +7,6 @@
 
 body {
     font-family: "Ubuntu Mono";
-    font-weight: 400;
     line-height: 1.6;
     color: #4A4A4A;
     background-color: #f5f5f5;
@@ -15,7 +14,7 @@ body {
 
 /* Container */
 .container {
-    width: 80%;
+    width: 100%;
     margin: auto;
     overflow: hidden;
 }
@@ -52,14 +51,15 @@ header li {
 }
 
 header h1 {
-	font-family: "Rubik Mono One";
     float: left;
+    font-family: "Rubik Mono One";
     margin-top: 0;
     margin-bottom: 0;
     font-size: 24px;
 }
 
 header h1 img {
+    margin-left: 100px;
     height: 70px; /* Ajuste a altura da imagem conforme necessário */
     width: auto;  /* Mantém a proporção da imagem */
 }
@@ -76,20 +76,59 @@ main {
 
 /* Hero Section */
 .hero {
-	font-family: "Rubik Mono One";
-    background: #ED324C;
-    color: white;
-    padding: 60px 0;
-    text-align: center;
-    border-bottom: #74279E 4px solid;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
 }
 
-.carousel div {
+.carousel {
+    height: 100%;
+}
+
+.carousel-slide {
+    position: relative;
+    text-align: left; /* Alinhamento do texto à esquerda */
+}
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%; /* Ajuste conforme necessário */
+    height: 100%;
+    background: rgba(255, 111, 97, 0.5); /* Fundo vermelho transparente */
+    color: white;
     padding: 20px;
+    border-radius: 5px 0 0 5px; /* Ajusta os cantos arredondados */
+}
+
+.carousel-overlay h2 {
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.carousel-overlay p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.carousel-overlay a {
+    display: inline-block;
+    margin-top: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: #FF6F61;
+    border-radius: 5px;
 }
 
 .hero h2 {
-	font-family: "Rubik Mono One";
     font-size: 2.5em;
 }
 
@@ -97,12 +136,31 @@ main {
     font-size: 1.2em;
 }
 
+.custom-dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #9013FE;
+    border-radius: 50%;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.dot.active {
+    transform: scale(1.5); /* Aumenta o tamanho do ponto quando ativo */
+}
+
 .btn-primary {
     background: #FF6F61;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 25px;
+    border-radius: 5px;
     margin-top: 20px;
     display: inline-block;
     font-size: 1.1em;
@@ -117,8 +175,8 @@ main {
 }
 
 .features h2 {
-	font-family: "Rubik Mono One";
     font-size: 2em;
+    font-family: "Rubik Mono One";
     margin-bottom: 20px;
     color: #4A90E2;
 }
@@ -157,7 +215,7 @@ main {
     color: white;
     padding: 10px 15px;
     text-decoration: none;
-    border-radius: 25px;
+    border-radius: 5px;
     display: inline-block;
     margin-top: 10px;
 }
@@ -170,3 +228,4 @@ footer {
     padding: 20px 0;
     margin-top: 40px;
 }
+
