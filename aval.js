@@ -47,9 +47,9 @@ function prepare() {
                 <img src="${type[1]}" alt="${empresa}">
                 <h3>${type[5]}</h3>
                 <a href="${type[6]}" class="site">Site</a>
-                <p><b>Porcentagem de mulheres na empresa: </b>${type[0]}</p>
-                <p><b>Tempo médio de duração dos cargos: </b>${type[2]}</p>
-                <p><b>Expectativa de progressão de cargo: </b>${type[3]}</p>
+                <p><b>% de mulheres: </b>${type[0]}</p>
+                <p><b>Tempo médio no cargo: </b>${type[2]}</p>
+                <p><b>Expectativa de progressão de carreira: </b>${type[3]}</p>
                 <p><b>Média Salarial: </b>${type[7]}</p>
                 <p><b>Ramo: </b>${type[4]}</p>
                 <p><b>Avaliação: </b>${empresa}</p>
@@ -77,9 +77,9 @@ function find(NomeEmpresa) {
             <img src="${type[1]}" alt="${NomeEmpresa}">
             <h3>${type[7]}</h3>
             <a href="${type[6]}" class="site">Site</a>
-            <p><b>Porcentagem de mulheres na empresa: </b>${type[0]}</p>
-            <p><b>Tempo médio de duração dos cargos: </b>${type[2]}</p>
-            <p><b>Expectativa de progressão de cargo: </b>${type[3]}</p>
+            <p><b>% de mulheres: </b>${type[0]}</p>
+            <p><b>Tempo médio no cargo: </b>${type[2]}</p>
+            <p><b>Expectativa de progressão de carreira: </b>${type[3]}</p>
             <p><b>Média Salarial: </b>${type[8]}</p>
             <p><b>Ramo: </b>${type[4]}</p>
             <p><b>Avaliação: </b>${type[5]}</p>
@@ -108,9 +108,9 @@ function applyFilters() {
                     <img src="${type[1]}" alt="${empresa}">
                     <h3>${type[5]}</h3>
                     <a href="${type[6]}" class="site">Site</a>
-                    <p><b>Porcentagem de mulheres na empresa: </b>${type[0]}</p>
-                    <p><b>Tempo médio de duração dos cargos: </b>${type[2]}</p>
-                    <p><b>Expectativa de progressão de cargo: </b>${type[3]}</p>
+                    <p><b>% de mulheres: </b>${type[0]}</p>
+                    <p><b>Tempo médio no cargo: </b>${type[2]}</p>
+                    <p><b>Expectativa de progressão de carreira: </b>${type[3]}</p>
                     <p><b>Média Salarial: </b>${type[7]}</p>
                     <p><b>Ramo: </b>${type[4]}</p>
                     <p><b>Avaliação: </b>${empresa}</p>
