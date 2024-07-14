@@ -38,12 +38,12 @@ async function prepare() {
                     <img src="${type[1]}" alt="${empresa}">
                     <h3>${type[5]}</h3>
                     <a href="${type[6]}" class="site">Site</a>
-                    <p>Porcentagem de mulheres na empresa: ${type[0]}</p>
-                    <p>Tempo médio de duração dos cargos: ${type[2]}</p>
-                    <p>Expectativa de progressão de cargo: ${type[3]}</p>
-                    <p>Média Salarial: ${type[7]}</p>
-                    <p>Ramo: ${type[4]}</p>
-                    <p>Avaliação: ${empresa}</p>
+                    <p><b>Porcentagem de mulheres na empresa: </b>${type[0]}</p>
+                    <p><b>Tempo médio de duração dos cargos: </b>${type[2]}</p>
+                    <p><b>Expectativa de progressão de cargo: </b>${type[3]}</p>
+                    <p><b>Média Salarial: </b>${type[7]}</p>
+                    <p><b>Ramo: </b>${type[4]}</p>
+                    <p><b>Avaliação: </b>${empresa}</p>
                 </div>`;
             atual.innerHTML += reviewCard;
         });
@@ -73,12 +73,12 @@ function find(NomeEmpresa) {
             <img src="${type[1]}" alt="${NomeEmpresa}">
             <h3>${type[7]}</h3>
             <a href="${type[6]}" class="site">Site</a>
-            <p>Porcentagem de mulheres na empresa: ${type[0]}</p>
-            <p>Tempo médio de duração dos cargos: ${type[2]}</p>
-            <p>Expectativa de progressão de cargo: ${type[3]}</p>
-            <p>Média Salarial: ${type[8]}</p>
-            <p>Ramo: ${type[4]}</p>
-            <p>Avaliação: ${type[5]}</p>
+            <p><b>Porcentagem de mulheres na empresa: </b>${type[0]}</p>
+            <p><b>Tempo médio de duração dos cargos: </b>${type[2]}</p>
+            <p><b>Expectativa de progressão de cargo: </b>${type[3]}</p>
+            <p><b>Média Salarial: </b>${type[8]}</p>
+            <p><b>Ramo: </b>${type[4]}</p>
+            <p><b>Avaliação: </b>${type[5]}</p>
         </div>`; 
 }
 
@@ -104,12 +104,12 @@ function applyFilters() {
                     <img src="${type[1]}" alt="${empresa}">
                     <h3>${type[5]}</h3>
                     <a href="${type[6]}" class="site">Site</a>
-                    <p>Porcentagem de mulheres na empresa: ${type[0]}</p>
-                    <p>Tempo médio de duração dos cargos: ${type[2]}</p>
-                    <p>Expectativa de progressão de cargo: ${type[3]}</p>
-                    <p>Média Salarial: ${type[7]}</p>
-                    <p>Ramo: ${type[4]}</p>
-                    <p>Avaliação: ${empresa}</p>
+                    <p><b>Porcentagem de mulheres na empresa: </br>${type[0]}</p>
+                    <p><b>Tempo médio de duração dos cargos: </b>${type[2]}</p>
+                    <p><b>Expectativa de progressão de cargo: </b>${type[3]}</p>
+                    <p><b>Média Salarial: </b>${type[7]}</p>
+                    <p><b>Ramo: </b>${type[4]}</p>
+                    <p><b>Avaliação: </b>${empresa}</p>
                 </div>`;
             atual.innerHTML += reviewCard;
         }
