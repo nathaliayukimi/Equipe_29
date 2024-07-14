@@ -2,60 +2,64 @@ let symbolGraph = new Map();
 let ranking = new Map();
 let bool = false;
 
-async function prepare() {
-    try {
-        symbolGraph = new Map();
-        ranking = new Map();
+function prepare() {
+    symbolGraph = new Map();
+    ranking = new Map();
+    bool = true;
+
+    const cards = document.querySelectorAll('.review-card');
+    const data = [];
+
+    cards.forEach(card => {
+        const empresa = card.querySelector('h3').textContent.toUpperCase().trim().replace(" ", "");
+        const porcentagem = card.querySelector('p:nth-of-type(1)').textContent.split(': ')[1];
+        const img = card.querySelector('img').src;
+        const tempo = card.querySelector('p:nth-of-type(2)').textContent.split(': ')[1];
+        const progressao = card.querySelector('p:nth-of-type(3)').textContent.split(': ')[1];
+        const ramo = card.querySelector('p:nth-of-type(5)').textContent.split(': ')[1];
+        const avaliacao = card.querySelector('p:nth-of-type(6)').textContent.split(': ')[1];
+        const site = card.querySelector('a.site').href;
+        const salario = card.querySelector('p:nth-of-type(4)').textContent.split(': ')[1];
         
-        let response = await fetch('Empresas.json');
-        
-        if (!response.ok) {
-            bool = false;
-            throw new Error('HTTP error');
-        }
+        const empresaData = {
+            empresa, porcentagem, img, tempo, progressao, ramo, avaliacao, site, salario
+        };
+        data.push(empresaData);
+    });
 
-        bool = true;
-        
-        let data = await response.json();
+    // Ordenar os dados pelo valor de `avaliacao`
+    data.sort((a, b) => parseFloat(b.avaliacao) - parseFloat(a.avaliacao));
 
-        // Ordenar os dados pelo valor de `value.avaliacao`
-        data.sort((a, b) => b.avaliacao.localeCompare(a.avaliacao));
+    data.forEach(value => {
+        symbolGraph.set(value.empresa, [value.porcentagem, value.img, value.tempo, value.progressao, value.ramo, value.avaliacao, value.site, value.empresa, value.salario]);
+    });
+    
+    data.forEach(value => {
+        ranking.set(value.avaliacao, [value.porcentagem, value.img, value.tempo, value.progressao, value.ramo, value.empresa, value.site, value.salario]);
+    });
 
-        data.forEach(value => {
-            symbolGraph.set(value.empresa.toUpperCase().trim().replace(" ", ""), [value.porcentagem, value.img, value.tempo, value.progressao, value.ramo, value.avaliacao, value.site, value.empresa, value.salario]);
-        });
-        
-        data.forEach(value => {
-            ranking.set(value.avaliacao.toUpperCase().trim().replace(" ", ""), [value.porcentagem, value.img, value.tempo, value.progressao, value.ramo, value.empresa, value.site, value.salario]);
-        });
+    const atual = document.querySelector('.review-cards');
+    atual.innerHTML = ''; 
 
-        const atual = document.querySelector('.review-cards');
-        atual.innerHTML = ''; 
-
-        ranking.forEach((type, empresa) => {
-            const reviewCard = `
-                <div class="review-card">
-                    <img src="${type[1]}" alt="${empresa}">
-                    <h3>${type[5]}</h3>
-                    <a href="${type[6]}" class="site">Site</a>
-                    <p><b>Porcentagem de mulheres na empresa: </b>${type[0]}</p>
-                    <p><b>Tempo médio de duração dos cargos: </b>${type[2]}</p>
-                    <p><b>Expectativa de progressão de cargo: </b>${type[3]}</p>
-                    <p><b>Média Salarial: </b>${type[7]}</p>
-                    <p><b>Ramo: </b>${type[4]}</p>
-                    <p><b>Avaliação: </b>${empresa}</p>
-                </div>`;
-            atual.innerHTML += reviewCard;
-        });
-    } catch (error) {
-        bool = false;
-        console.log('HTTP server not available, keeping static content');
-        // Mantém o conteúdo HTML estático
-    }
+    ranking.forEach((type, empresa) => {
+        const reviewCard = `
+            <div class="review-card">
+                <img src="${type[1]}" alt="${empresa}">
+                <h3>${type[5]}</h3>
+                <a href="${type[6]}" class="site">Site</a>
+                <p><b>Porcentagem de mulheres na empresa: </b>${type[0]}</p>
+                <p><b>Tempo médio de duração dos cargos: </b>${type[2]}</p>
+                <p><b>Expectativa de progressão de cargo: </b>${type[3]}</p>
+                <p><b>Média Salarial: </b>${type[7]}</p>
+                <p><b>Ramo: </b>${type[4]}</p>
+                <p><b>Avaliação: </b>${empresa}</p>
+            </div>`;
+        atual.innerHTML += reviewCard;
+    });
 }
 
 function find(NomeEmpresa) {
-    if(!bool){
+    if (!bool) {
         return;
     }
     let type = symbolGraph.get(NomeEmpresa);
@@ -90,7 +94,7 @@ function checkEnter(event) {
 }
 
 function applyFilters() {
-    if(!bool){
+    if (!bool) {
         return;
     }
     const selectedCategory = document.getElementById('category').value;
@@ -98,13 +102,13 @@ function applyFilters() {
     atual.innerHTML = ''; 
 
     ranking.forEach((type, empresa) => {
-        if ((selectedCategory === "all" || type[4] === selectedCategory)) {
+        if (selectedCategory === "all" || type[4] === selectedCategory) {
             const reviewCard = `
                 <div class="review-card">
                     <img src="${type[1]}" alt="${empresa}">
                     <h3>${type[5]}</h3>
                     <a href="${type[6]}" class="site">Site</a>
-                    <p><b>Porcentagem de mulheres na empresa: </br>${type[0]}</p>
+                    <p><b>Porcentagem de mulheres na empresa: </b>${type[0]}</p>
                     <p><b>Tempo médio de duração dos cargos: </b>${type[2]}</p>
                     <p><b>Expectativa de progressão de cargo: </b>${type[3]}</p>
                     <p><b>Média Salarial: </b>${type[7]}</p>
