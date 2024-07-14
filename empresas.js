@@ -1,4 +1,5 @@
 function acesso(){
+    event.preventDefault();
 
     // Limpa todos os campos do formulário
     var inputs = document.querySelectorAll('#meuFormulario input');
