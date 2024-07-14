@@ -1,9 +1,6 @@
 /* Reset básico */
 * {
     margin: 0;
-    padding: 0;/* Reset básico */
-* {
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -23,178 +20,6 @@ body {
     line-height: 1.6;
     color: var(--cor-de-destaque);
     background-color: var(--cor-clara);
-}
-
-/* Container */
-.container {
-    width: 100%;
-    margin: auto;
-    overflow: hidden;
-}
-
-/* Header */
-header {
-    background: var(--cor-intermediaria);
-    color: var(--cor-de-destaque);
-    font-weight: 700;
-    padding-top: 15px;
-    padding-bottom: 0px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
-header a {
-    color: var(--cor-de-destaque);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-}
-
-header ul {
-    padding: 0;
-    list-style: none;
-}
-
-header li {
-    display: inline;
-    padding: 0 20px 0 20px;
-}
-
-header h1 {
-	font-family: var(--fonte-destaque);
-    float: left;
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 24px;
-}
-
-header h1 img {
-    margin-left: 100px;
-    height: 70px; /* Ajuste a altura da imagem conforme necessário */
-    width: auto;  /* Mantém a proporção da imagem */
-}
-
-header nav {
-    float: right;
-    margin-top: 10px;
-}
-
-/* Fix for body content */
-main {
-    padding-top: 100px;
-}
-
-/* Hero Section */
-.hero {
-	font-family: var(--fonte-destaque);
-    background: var(--cor-de-destaque);
-    color: var(--cor-clara);
-    position: relative;
-    width: 100%;
-    height: 80vh;
-    overflow: hidden;
-}
-
-.hero h2 {
-    font-size: 2.5em;
-}
-
-.hero p {
-    font-size: 1.2em;
-}
-
-/* Footer */
-footer {
-    background: var(--cor-de-destaque);
-    color: var(--cor-clara);
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
-}
-
-#cont{
-    font-family: var(--fonte-destaque);
-    font-size: 2em;
-    font-weight: 900;
-    line-height: 1.6;
-    color: var(--cor-de-destaque);
-    padding-left: 30px;
-    padding-top: 30px;
-}
-
-form {
-    font-weight: 700;
-    margin: 40px 0;
-    width: 100%; /* Garante que o formulário ocupe toda a largura do contêiner */
-    padding: 20px;
-}
-
-form label, legend{
-    display: block;
-    font-size: 1.2em;
-    margin: 0 0 10px;
-}
-
-.input-padrao{
-    display: block;
-    margin: 0 0 20px;
-    padding: 10px 25px;
-    width: 50%;
-    border-radius: 10px;
-}
-
-fieldset {
-    color: var(--cor-de-destaque);
-    font-weight: 400;
-    border: 2px solid var(--cor-de-destaque); /* Cor da borda e largura */
-    border-radius: 10px; /* Arredondamento dos cantos */
-    padding: 0px 20px; /* Espaçamento interno */
-    margin-bottom: 20px; /* Margem inferior */
-}
-
-legend {
-    font-weight: bold; /* Estilo da fonte para a legenda */
-    color: var(--cor-de-destaque); /* Cor do texto da legenda */
-}
-
-.checkbox{
-    margin:20px 0;
-    
-}
-
-.enviar{
-    font-family: var(--fonte-destaque);
-    font-size: 1em;
-    background: var(--cor-botoes);
-    color: var(--cor-clara);
-    text-decoration: none;
-    text-transform: uppercase;
-    
-    padding: 10px 25px;
-    border:none;
-    border-radius: 25px;
-    
-    display: inline-block;
-    margin-top: 10px;
-    transition:1s background;
-    cursor: pointer;
-}
-
-.enviar:hover{
-    background: var(--cor-de-destaque);
-    transform: scale(1.2);
-}
-    box-sizing: border-box;
-}
-
-body {
-    font-family: "Ubuntu Mono";
-    font-weight: 400;
-    line-height: 1.6;
-    color: #4A90E2;
-    background-color: #f5f5f5;
 }
 
 /* Container */
@@ -219,7 +44,7 @@ header {
 }
 
 header a {
-    color: white;
+    color: var(--cor-de-destaque);
     text-decoration: none;
     text-transform: uppercase;
     font-size: 16px;
@@ -232,11 +57,11 @@ header ul {
 
 header li {
     display: inline;
-    padding: 0 20px 0 20px;
+    padding: 0 20px;
 }
 
 header h1 {
-	font-family: "Rubik Mono One";
+    font-family: var(--fonte-destaque);
     float: left;
     margin-top: 0;
     margin-bottom: 0;
@@ -258,145 +83,78 @@ main {
     padding-top: 100px;
 }
 
-/* Hero Section */
-.hero {
-	font-family: "Rubik Mono One";
-    background: #ED324C;
-    color: white;
-    padding: 60px 0;
-    text-align: center;
-    border-bottom: #74279E 4px solid;
-}
-
-.carousel div {
-    padding: 20px;
-}
-
-.hero h2 {
-	font-family: "Rubik Mono One";
-    font-size: 2.5em;
-}
-
-.hero p {
-    font-size: 1.2em;
-}
-
-.btn-primary {
-    background: #FF6F61;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 25px;
-    margin-top: 20px;
-    display: inline-block;
-    font-size: 1.1em;
-}
-
-/* Features Section */
-.features {
-    padding: 40px 0;
-    text-align: center;
-    background-color: #f8f8f8;
-    border-bottom: #FF6F61 4px solid;
-}
-
-.features h2 {
-	font-family: "Rubik Mono One";
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #74279E;
-}
-
-.feature-cards {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.card {
-    background: #74279E;
-    padding: 20px;
-    border-radius: 20px;
-    width: 30%;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-.card h3 {
-    margin-bottom: 10px;
-    color: white;
-}
-
-.card p {
-    font-size: 1em;
-    color: white;
-}
-
-.btn-secondary {
-    background: #9013FE;
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 25px;
-    display: inline-block;
-    margin-top: 10px;
-}
-
 #cont{
-    font-family: "Ubuntu Mono";
-    font-size: 2.5em;
+    font-family: var(--fonte-destaque);
+    font-size: 2em;
     font-weight: 900;
     line-height: 1.6;
-    color: #74279E;
+    color: var(--cor-de-destaque);
     padding-left: 30px;
     padding-top: 30px;
-    background-color: #f5f5f5;
 }
 
+.deal{
+    font-family: var(--fonte-texto);
+    font-size: 1em;
+    color: var(--cor-de-destaque);
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.deal ul{
+    list-style: none;
+    display: flex;
+}
+
+.deal li{
+    margin: 20px;
+}
+
+/* Form */
 form {
-    margin: 40px 0;
-    width: 100%; /* Garante que o formulário ocupe toda a largura do contêiner */
-    padding: 20px;
+    background: var(--cor-intermediaria);
+    padding: 2em;
     border-radius: 5px;
-    background-color: #f9f9f9;
+    margin-bottom: 2em;
 }
 
-form label, legend{
+form h2, form h3 {
+    color: var(--cor-de-destaque);
+}
+
+form label {
     display: block;
-    font-size: 20px;
-    margin: 0 0 10px;
+    margin-bottom: 10px;
+    color: var(--cor-de-destaque);
 }
 
-.input-padrao{
-    display: block;
-    margin: 0 0 20px;
-    padding: 10px 25px;
-    width: 50%;
-}
-
-.checkbox{
-    margin:20px 0;
-}
-
-.enviar{
-    width:40%;
-    padding: 15px 0;
-    background: #FF6F61;
-    color:white;
-    font-size: 18px;
-    border:none;
+form input[type="text"], form input[type="email"], form input[type="tel"], form input[type="url"], form input[type="file"], form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    transition:1s background;
+    font-size: 1em;
+}
+
+form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+form button[type="submit"] {
+    background: var(--cor-botoes);
+    color: var(--cor-clara);
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 1em;
+    font-weight: 700;
+    transition: background 0.3s ease;
 }
 
-.enviar:hover{
-    background:#ED324C;
-    transform: scale(1.2);
+form button[type="submit"]:hover {
+    background: darken(var(--cor-botoes), 10%);
 }
 
 /* Footer */
@@ -407,3 +165,4 @@ footer {
     padding: 20px 0;
     margin-top: 40px;
 }
+
