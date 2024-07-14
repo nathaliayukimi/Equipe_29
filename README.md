@@ -3,7 +3,7 @@ Projeto desenvolvido no Hackathon Hacking.Her, nos dias 12, 13 e 14 de Julho de 
 
 ## Checklist
 - [ ] Atualizar as nossas fotinhas
-- [ ] Estou atualizandoa base de dados. Upei a parte da avaliação, mas, preciso atualizar a base de dados
+- [X] Estou atualizandoa base de dados. Upei a parte da avaliação, mas, preciso atualizar a base de dados
   > A propósito, vou colocar da forma
   > - Imagem
   > - Nome da empresa
