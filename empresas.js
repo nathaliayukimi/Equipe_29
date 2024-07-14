@@ -1,4 +1,4 @@
-function acesso(){
+function acesso(event){
     event.preventDefault();
 
     // Limpa todos os campos do formulário
