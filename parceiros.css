@@ -54,7 +54,10 @@ header a {
     font-size: 1.5em;
     padding: 7px 15px;
     border-radius: 0.3em;
+    margin-right: 80px;
+    margin-left: 80px;
 }
+
 
 header a:hover{
     background: var(--cor-de-destaque);
@@ -170,14 +173,16 @@ main {
 
 .empresas p {
     color: black;
-    text-align: left;
-    font-size: 1.2em;
+    text-align: justify;
+    font-size: 1em;
+    padding-bottom: 10px;
 }
 
 .empresas ul{
     text-align: left;
     color: black;
     padding-left: 100px;
+    padding-right: 60px;
 }
 
 .empresas h1 img {
