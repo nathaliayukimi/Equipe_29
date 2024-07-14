@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Carreiras</title>
+    <link rel="stylesheet" href="explorecarreiras.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script defer src="explore.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><img src="logo.png" alt="Para Elas" ></h1>
+            <nav>
+                <ul>
+                    <li><a href="inicio.html">Início</a></li>
+                    <li><a href="empresas.html">Empresas</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="search-bar">
+            <input type="text" id="searchInput" onkeyup="filterJobs()" placeholder="Pesquisar vagas...">
+        </section>
+        <section class="job-overview">
+            <div class="job-listings" id="jobListings">
+                <div class="job-card" data-title="Desenvolvedor Front-end" data-company="Tech Solutions" onclick="showJobDetails('job1')">
+                    <h2 class="job-title">Desenvolvedor Front-end</h2>
+                    <p class="company">Empresa: SHAKERS CONSULTORIA E-COMMERCE E MIDIA DIGITAL LTDA</p>
+                    <p class="location">Local: São Paulo, SP</p>
+                    <p class="rating">Avaliação: 4.5</p>
+                    <p class="salary">Salário: R$ 1.000,00</p>
+                </div>
+                <div class="job-card" data-title="Analista de Dados" data-company="Data Insights" onclick="showJobDetails('job2')">
+                    <h2 class="job-title">Analista de Desenvolvimento de Sistemas Jr</h2>
+                    <p class="company">Empresa: CSD BR</p>
+                    <p class="location">Local: São Paulo, SP</p>
+                    <p class="rating">Avaliação: 4.2</p>
+                    <p class="salary">Salário: R$ 4.000,00</p>
+                </div>
+                <div class="job-card" data-title="Desenvolvedor Front-end" data-company="Tech Solutions" onclick="showJobDetails('job3')">
+                    <h2 class="job-title">Desenvolvedor, Programador Javascript, Node Pleno</h2>
+                    <p class="company">Empresa: Gismar Redes</p>
+                    <p class="location">Local: São Paulo, SP</p>
+                    <p class="rating">Avaliação: 4.5</p>
+                    <p class="salary">Salário: R$ 1.000,00</p>
+                </div>
+                <div class="job-card" data-title="Analista de Dados" data-company="Data Insights" onclick="showJobDetails('job5')">
+                    <h2 class="job-title">Desenvolvedor Web</h2>
+                    <p class="company">Empresa: GRANFINALE SISTEMAS AGRÍCOLAS</p>
+                    <p class="location">Local: Rio de Janeiro, RJ</p>
+                    <p class="rating">Avaliação: 4.2</p>
+                    <p class="salary">Salário: R$ 4.000,00</p>
+                </div>
+                <div class="job-card" data-title="Desenvolvedor Front-end" data-company="Tech Solutions" onclick="showJobDetails('job4')">
+                    <h2 class="job-title">Desenvolvedor de Software</h2>
+                    <p class="company">Empresa: Santi</p>
+                    <p class="location">Local: São Paulo, SP</p>
+                    <p class="rating">Avaliação: 4.5</p>
+                    <p class="salary">Salário: R$ 3.000,00</p>
+                </div>
+                <!-- Adicione mais cartões de vaga conforme necessário -->
+            </div>
+            <div class="job-details" id="job-details">
+                <!-- Detalhes da vaga selecionada serão exibidos aqui -->
+                <div id="job1" class="job-detail-card">
+                    <h2 class="job-title">Desenvolvedor Front-end</h2>
+                    <p class="company">Empresa: SHAKERS CONSULTORIA E-COMMERCE E MIDIA DIGITAL LTDA</p>
+                    <p class="location">Local: São Paulo, SP</p>
+                    <p class="rating">Avaliação: 4.5</p>
+                    <p class="salary">Salário: R$ 1.000,00</p>
+                    <p class="description">Descrição: A Shakers é uma agência de tecnologia e marketing digital inovadora, com foco em desenvolvimento de sites Shopify.
+
+                        Nosso foco é entregar projetos elaborados e desafiadores, além de ajudar nossos clientes a alcançar seus objetivos de marketing e crescimento por meio de estratégias inteligentes e personalizadas, através das frentes de Mídia Online, CRM, Social Media, SEO entre outros.
+                        
+                        Estamos em busca de talentos para integrar nosso time de Front End!
+                        
+                        Se você é movido pela vontade de aprender, apaixonado por desenvolvimento front end e ansioso para fazer parte de uma equipe dinâmica, inscreva-se!
+                        
+                        Aqui na Shakers, vamos te desenvolver para atuar com as seguintes atividades:
+                        
+                        Colaborar com a equipe de design e desenvolvimento para traduzir conceitos visuais em código front end elegante e eficiente;
+                        Desenvolver e otimizar páginas web que atendam aos padrões de usabilidade, acessibilidade e desempenho;
+                        Garantir a compatibilidade cross-browser e cross-device para proporcionar uma experiência consistente em todas as plataformas;
+                        Conhecer e atualizar constantemente seus conhecimentos na plataforma Shopify;
+                        Manter-se atualizado com as melhores práticas de desenvolvimento Front-End;
+                        Sugerir melhorias contínuas para aprimorar a qualidade do trabalho.</p>
+                    <a href="https://www.glassdoor.com.br/Vaga/s%C3%A3o-paulo-est%C3%A1gio-front-end-vagas-SRCH_IL.0,9_IC2479061_KO10,27.htm" class="btn-primary">Ver Vaga</a>
+                </div>
+                <div id="job2" class="job-detail-card">
+                    <h2 class="job-title">Analista de Desenvolvimento de Sistemas Jr</h2>
+                    <p class="company">Empresa: CSD BR</p>
+                    <p class="location">Local: São Paulo, SP</p>
+                    <p class="rating">Avaliação: 4.2</p>
+                    <p class="salary">Salário: R$ 4.000,00</p>
+                    <p class="description">Descrição: CSD BR está com vaga aberta para Analista de Desenvolvimento Jr!
+
+                        Se você tem vivência na área, somada à paixão por conduzir uma organização ao sucesso, temos a oportunidade perfeita para você.
+                        
+                        Nossa equipe está em busca de um(a) profissional dedicado(a) para apoiar as atividades dos nossos processos da área de desenvolvimento de produtos. Precisamos das suas habilidades e conhecimentos em programação para criar software funcional, eficiente, seguro e confiável que atenda às necessidades dos usuários e clientes, contribuindo para a resolução de problemas e impulsionando a inovação tecnológica.
+                        
+                        A CSD BR permite que seus colaboradores tenham uma atuação criativa, valorizando o aprendizado a crescimento.</p>
+                    <a href="https://www.glassdoor.com.br/job-listing/analista-de-desenvolvimento-de-sistemas-jr-csd-br-JV_IC2479061_KO0,42_KE43,49.htm?jl=1009351992411" class="btn-primary">Ver Vaga</a>
+                </div>
+                <div id="job3" class="job-detail-card">
+                    <h2 class="job-title">Desenvolvedor, Programador Javascript, Node Pleno</h2>
+                    <p class="company">Empresa: Gismar Redes</p>
+                    <p class="location">Local: São Paulo, SP</p>
+                    <p class="rating">Avaliação: 4.2</p>
+                    <p class="salary">Salário: R$ 4.000,00</p>
+                    <p class="description">Descrição: Descrição da Empresa:
+
+                        Somos uma empresa em crescimento constante, localizada em Itupeva, SP. Valorizamos a integração tecnológica e buscamos um(a) Desenvolvedor(a)/ Programador, para desenvolver soluções internas que otimizem nossos processos e operações, além de manter nossa infraestrutura estável e eficiente.</p>
+                    <a href="https://www.glassdoor.com.br/job-listing/desenvolvedor-programador-javascript-node-pleno-gismar-redes-JV_IC2490466_KO0,47_KE48,60.htm?jl=1009331247219" class="btn-primary">Ver Vaga</a>
+                </div><div id="job4" class="job-detail-card">
+                    <h2 class="job-title">Desenvolvedor de Software</h2>
+                    <p class="company">Empresa: Santi</p>
+                    <p class="location">Local: São Paulo, SP</p>
+                    <p class="rating">Avaliação: 4.2</p>
+                    <p class="salary">Salário: R$ 3.000,00</p>
+                    <p class="description">Descrição: Se você é um desenvolvedor apaixonado por tecnologia e está pronto para embarcar em uma jornada de aprendizado e crescimento profissional, nós queremos te conhecer! Junte-se a nós e faça parte de uma equipe comprometida com a excelência e a inovação.</p>
+                    <a href="https://www.glassdoor.com.br/job-listing/desenvolvedor-de-software-santi-JV_IC2509719_KO0,25_KE26,31.htm?jl=1009342222255" class="btn-primary">Ver Vaga</a>
+                </div><div id="job5" class="job-detail-card">
+                    <h2 class="job-title">Desenvolvedor Web</h2>
+                    <p class="company">Empresa: GRANFINALE SISTEMAS AGRÍCOLAS</p>
+                    <p class="location">Local: Rio de Janeiro, RJ</p>
+                    <p class="rating">Avaliação: 4.2</p>
+                    <p class="salary">Salário: R$ 4.000,00</p>
+                    <p class="description">Descrição: Desenvolver sistemas e aplicações, determinando interface gráfica, critérios ergonômicos de navegação, montagem da estrutura de banco de dados, codificação e testes de programas e aplicativos; projetar, implantar e realizar manutenção de sistemas e aplicações; selecionar recursos de desenvolvimento de sistemas e aplicações, participando da seleção de metodologias de desenvolvimento de sistemas, de linguagem de programação e de ferramentas de desenvolvimento; planejar etapas e ações de trabalho.
+
+                        Tipo de vaga: Tempo integral, Efetivo CLT</p>
+                    <a href="https://www.glassdoor.com.br/job-listing/desenvolvedor-web-granfinale-sistemas-agr%C3%ADcolas-JV_IC2386885_KO0,17_KE18,47.htm?jl=1009356974391" class="btn-primary">Ver Vaga</a>
+                </div>
+                <!-- Adicione mais detalhes de vaga conforme necessário -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Para Elas. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
