@@ -52,7 +52,10 @@ header a {
     font-size: 1.5em;
     padding: 7px 15px;
     border-radius: 0.3em;
+    margin-right: 80px;
+    margin-left: 80px;
 }
+
 
 header a:hover{
     background: var(--cor-de-destaque);
