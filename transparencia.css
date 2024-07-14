@@ -92,15 +92,15 @@ main {
 
 /* Seção de Transparência */
 .transparency {
-    padding-top: 50px;
+    padding-top: 60px;
 }
 
 .transparency-section {
     display: flex;
     align-items: center;
     justify-content: space-between; /* Garante que o texto e a imagem fiquem lado a lado */
-    height: 100vh;
-    padding: 20px;
+    height: 80vh;
+    padding: 40px;
 }
 
 .transparency-section .text, .transparency-section .image {
@@ -110,18 +110,17 @@ main {
 }
 
 .transparency-section .text {
-    max-width: 50%; /* Garante que o texto não ocupe mais que a metade da largura */
+    max-width: 60%; /* Garante que o texto não ocupe mais que a metade da largura */
 }
 
 .transparency-section .image {
-    max-width: 50%; /* Garante que a imagem não ocupe mais que a metade da largura */
+    max-width: 40%; /* Garante que a imagem não ocupe mais que a metade da largura */
     text-align: center; /* Centraliza a imagem verticalmente */
 }
 
 .transparency-section .image img {
-    width: 80%; /* Faz com que a imagem ocupe toda a largura disponível */
+    width: 70%; /* Faz com que a imagem ocupe toda a largura disponível */
     height: auto; /* Mantém a proporção da imagem */
-    border-radius: 10px;
 }
 
 .transparency-section .text h2, .transparency-section .text h3 {
@@ -184,7 +183,7 @@ main {
 }
 
 .transparency-section .example {
-    background: var(--cor-intermediaria);
+    background: var(--cor-botoes);
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -192,13 +191,13 @@ main {
 
 .transparency-section .example h4 {
     font-size: 1.5em;
-    color: var(--cor-de-destaque);
     margin-bottom: 10px;
+    color: var(--cor-clara);
 }
 
 .transparency-section .example p {
     font-size: 1em;
-    color: var(--cor-de-destaque);
+    color: var(--cor-clara);
 }
 
 .transparency-section.invertido {
@@ -206,16 +205,12 @@ main {
     flex-direction: row-reverse; /* Inverte a direção do flex para colocar imagem à esquerda e texto à direita */
 }
 
-.transparency-section:nth-child(3) {
-    padding-top: 0%;
-    margin-top: 100px; /* Ajuste o valor conforme necessário */
-}
-
 
 /* Footer */
 footer {
     background: var(--cor-de-destaque);
     color: var(--cor-clara);
+    font-weight: 700;
     text-align: center;
     padding: 20px 0;
     margin-top: 40px;
