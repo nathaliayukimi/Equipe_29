@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Para Elas</title>
+        <link rel="stylesheet" href="aval.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script defer src="aval.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <header>
+        <div class="container">
+            <h1><img src="logo.png" alt="Para Elas" ></h1>
+            <nav>
+                <ul>
+                    <li><a href="inicio.html">Início</a></li>
+                    <li><a href="empresas.html">Empresas</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquisar empresas..." class="busca">
+            <button type="button" class="submit" onkeydown="javascript:EnterTab('input2',event)">Pesquisar</button>
+        </div>
+
+        <div class="content">
+            <aside class="filters">
+                <h2>Filtros</h2>
+                <form>
+                    <label for="category">Categorias:</label>
+                    <select id="category" name="category">
+                        <option value="all" selected>Todas</option>
+                        <option value="telecomunicações">Telecomunicações</option>
+                        <option value="empreendedorismo">Empreendedorismo</option>
+                        <option value="e-commerce">E-commerce</option>
+                    </select>
+                </form>
+            </aside>
+
+            <section class="reviews">
+                <h2>Avaliações de Empresas</h2>
+                <div class="review-cards">
+                    <div class="review-card">
+                        <img src="Empresas/Amazon.webp" alt="amazon">
+                        <h3>Amazon</h3>
+                        <a href="${type[6]}" class="site">Site</a>
+                        <p>Porcentagem de mulheres na empresa: 90%</p>
+                        <p>Tempo médio de duração dos cargos: 5 anos</p>
+                        <p>Expectativa de progressão de cargo: média</p>
+                        <p>Média Salarial: 8000$</p>
+                        <p>Ramo: E-commerce</p>
+                        <p>Avaliação: $9.4</p>
+                    </div>
+                    <div class="review-card">
+                        <img src="Empresas/Amazon.webp" alt="amazon">
+                        <h3>Amazon</h3>
+                        <a href="${type[6]}" class="site">Site</a>
+                        <p>Porcentagem de mulheres na empresa: 90%</p>
+                        <p>Tempo médio de duração dos cargos: 5 anos</p>
+                        <p>Expectativa de progressão de cargo: média</p>
+                        <p>Média Salarial: 8000$</p>
+                        <p>Ramo: E-commerce</p>
+                        <p>Avaliação: $9.4</p>
+                    </div>
+                    <div class="review-card">
+                        <img src="Empresas/Amazon.webp" alt="amazon">
+                        <h3>Amazon</h3>
+                        <a href="${type[6]}" class="site">Site</a>
+                        <p>Porcentagem de mulheres na empresa: 90%</p>
+                        <p>Tempo médio de duração dos cargos: 5 anos</p>
+                        <p>Expectativa de progressão de cargo: média</p>
+                        <p>Média Salarial: 8000$</p>
+                        <p>Ramo: E-commerce</p>
+                        <p>Avaliação: 9.4</p>
+                    </div>
+                    <div class="review-card">
+                        <img src="Empresas/Amazon.webp" alt="amazon">
+                        <h3>Amazon</h3>
+                        <a href="${type[6]}" class="site">Site</a>
+                        <p>Porcentagem de mulheres na empresa: 90%</p>
+                        <p>Tempo médio de duração dos cargos: 5 anos</p>
+                        <p>Expectativa de progressão de cargo: média</p>
+                        <p>Média Salarial: 8000$</p>
+                        <p>Ramo: E-commerce</p>
+                        <p>Avaliação: 9.4</p>
+                    </div>
+                    <div class="review-card">
+                        <img src="Empresas/Amazon.webp" alt="amazon">
+                        <h3>Amazon</h3>
+                        <a href="${type[6]}" class="site">Site</a>
+                        <p>Porcentagem de mulheres na empresa: 90%</p>
+                        <p>Tempo médio de duração dos cargos: 5 anos</p>
+                        <p>Expectativa de progressão de cargo: média</p>
+                        <p>Média Salarial: 8000$</p>
+                        <p>Ramo: E-commerce</p>
+                        <p>Avaliação: 9.4</p>
+                    </div>
+                    <div class="review-card">
+                        <img src="Empresas/Amazon.webp" alt="amazon">
+                        <h3>Amazon</h3>
+                        <a href="${type[6]}" class="site">Site</a>
+                        <p>Porcentagem de mulheres na empresa: 90%</p>
+                        <p>Tempo médio de duração dos cargos: 5 anos</p>
+                        <p>Expectativa de progressão de cargo: média</p>
+                        <p>Média Salarial: 8000$</p>
+                        <p>Ramo: E-commerce</p>
+                        <p>Avaliação: 9.4</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Para Elas. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,79 @@
+[
+    {
+        "empresa" : "Tim",
+        "img" : "Empresas/Tim.webp",
+        "porcentagem" : "85%",
+        "tempo" : "5 anos",
+        "progressao" : "rápida",
+        "ramo" : "telecomunicações",
+        "avaliacao" : "7.7",
+        "site" : "https://www.google.com/",
+        "salario" : "8000$"
+    },
+    {
+        "empresa" : "SEBRAE",
+        "img" : "Empresas/SEBRAE.png",
+        "porcentagem" : "95%",
+        "tempo" : "7 anos",
+        "progressao" : "média",
+        "ramo" : "empreendedorismo",
+        "avaliacao" : "8.7",
+        "site" : "https://www.google.com/",
+        "salario" : "8000$"
+    },
+    {
+        "empresa" : "Amazon",
+        "img" : "Empresas/Amazon.webp",
+        "porcentagem" : "95%",
+        "tempo" : "7 anos",
+        "progressao" : "média",
+        "ramo" : "e-commerce",
+        "avaliacao" : "9.0",
+        "site" : "https://www.google.com/",
+        "salario" : "8000$"
+    },
+    {
+        "empresa" : "Nvidia",
+        "img" : "Empresas/nvidia.jpeg",
+        "porcentagem" : "65%",
+        "tempo" : "7 anos",
+        "progressao" : "média",
+        "ramo" : "hardware",
+        "avaliacao" : "5.0",
+        "site" : "https://www.google.com/",
+        "salario" : "8000$"
+    },
+    {
+        "empresa" : "Ambev",
+        "img" : "Empresas/ambev.jpg",
+        "porcentagem" : "65%",
+        "tempo" : "7 anos",
+        "progressao" : "média",
+        "ramo" : "alimentício",
+        "avaliacao" : "7.0",
+        "site" : "https://www.google.com/",
+        "salario" : "8000$"
+    },
+    {
+        "empresa" : "Mastertech",
+        "img" : "Empresas/mastertech.jpeg",
+        "porcentagem" : "93%",
+        "tempo" : "7 anos",
+        "progressao" : "média",
+        "ramo" : "empreendedorismo",
+        "avaliacao" : "8.9",
+        "site" : "https://www.google.com/",
+        "salario" : "8000$"
+    },
+    {
+        "empresa" : "Vale",
+        "img" : "Empresas/vale.jpg",
+        "porcentagem" : "45%",
+        "tempo" : "7 anos",
+        "progressao" : "média",
+        "ramo" : "mineração",
+        "avaliacao" : "5.5",
+        "site" : "https://www.google.com/",
+        "salario" : "8000$"
+    }
+]
