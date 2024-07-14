@@ -15,79 +15,6 @@
     --fonte-texto: "League Spartan";
 }
 
-body {
-    font-family: var(--fonte-texto);
-    font-weight: 400;
-    line-height: 1.6;
-    color: var(--cor-de-destaque);
-    background-color: var(--cor-clara);
-}
-
-/* Container */
-.container {
-    width: 100%;
-    margin: auto;
-    overflow: hidden;
-}
-
-/* Header */
-header {
-    background: var(--cor-intermediaria);
-    color: var(--cor-de-destaque);
-    font-weight: 700;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    display: flex;
-}
-
-header a {
-    color: var(--cor-de-destaque);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    padding: 7px 15px;
-    border-radius: 0.3em;
-}
-
-header a:hover{
-    background: var(--cor-de-destaque);
-    color: var(--cor-clara);
-}
-
-header ul {
-    padding: 0;
-    list-style: none;
-}
-
-header li {
-    display: inline;
-    padding: 0 20px 0 20px;
-}
-
-header h1 {
-	font-family: var(--fonte-destaque);
-    float: left;
-    margin-top: 0px;
-    margin-bottom: 0;
-    font-size: 24px;
-}
-
-header h1 img {
-    margin-left: 100px;
-    height: 70px; /* Ajuste a altura da imagem conforme necessário */
-    width: auto;  /* Mantém a proporção da imagem */
-}
-
-header nav {
-    float: right;
-    margin-top: 20px;
-}
-
 main {
     padding-top: 130px;
 }
@@ -189,6 +116,21 @@ main {
     text-align: center;
 }
 
+.review-card h3{
+    font-size: 1.2em;
+    font-family: var(--fonte-destaque);
+    text-transform: uppercase;
+}
+
+.review-card p{
+    text-align: left;
+    color: black;
+}
+
+.review-card p b{
+    color: var(--cor-de-destaque);
+}
+
 .review-card img {
     width: 150px;
     height: 150px;
@@ -220,14 +162,4 @@ form button[type="submit"] {
 
 form button[type="submit"]:hover {
     background-color: var(--cor-de-destaque); 
-}
-
-/* Footer */
-footer {
-    background: var(--cor-de-destaque);
-    color: var(--cor-clara);
-    font-weight:700;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 40px;
 }
