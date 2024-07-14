@@ -95,7 +95,7 @@ main {
     font-family: var(--fonte-texto);
     text-align: center;
     font-size: 3em;
-    font-weight: 900;
+    font-weight: 700;
     line-height: 1.6;
     color: var(--cor-de-destaque);
     padding: 10px 80px;
