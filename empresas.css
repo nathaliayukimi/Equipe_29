@@ -92,8 +92,9 @@ main {
 }
 
 #cont{
-    font-family: var(--fonte-destaque);
-    font-size: 2em;
+    font-family: var(--fonte-texto);
+    text-align: center;
+    font-size: 3em;
     font-weight: 900;
     line-height: 1.6;
     color: var(--cor-de-destaque);
@@ -102,7 +103,7 @@ main {
 
 .deal{
     font-family: var(--fonte-texto);
-    font-size: 1em;
+    font-size: 1.5em;
     color: black;
     padding: 10px 80px;
 
@@ -120,6 +121,7 @@ main {
 /* Form */
 form {
     font-family: var(--fonte-texto);
+    font-size: 1.4em;
     padding: 2em;
     border-radius: 5px;
     margin-bottom: 2em;
