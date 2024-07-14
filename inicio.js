@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('.carousel').slick({
         autoplay: true,
-        autoplaySpeed: 1000, // Ajuste conforme necessário
+        autoplaySpeed: 1700, // Ajuste conforme necessário
         dots: false, // Desativar os pontos padrão
         arrows: false,
         appendDots: $('.custom-dots')
