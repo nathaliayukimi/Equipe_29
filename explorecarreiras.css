@@ -10,81 +10,9 @@
     --cor-intermediaria: #EDAFB8; 
     --cor-de-destaque: #960f65; 
     --cor-secundaria: #3883ac;  
+    --cor-secundaria-clara: #b8d6e6;
     --fonte-destaque: "Rubik Mono One";
     --fonte-texto: "League Spartan";
-}
-
-body {
-    font-family: var(--fonte-texto);
-    font-weight: 400;
-    line-height: 1.6;
-    color: var(--cor-de-destaque);
-    background-color: var(--cor-clara);
-}
-
-/* Container */
-.container {
-    width: 100%;
-    margin: auto;
-    overflow: hidden;
-}
-
-/* Header */
-header {
-    background: var(--cor-intermediaria);
-    color: var(--cor-de-destaque);
-    font-weight: 700;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    display: flex;
-}
-
-header a {
-    color: var(--cor-de-destaque);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1.5em;
-    padding: 7px 15px;
-    border-radius: 0.3em;
-}
-
-header a:hover{
-    background: var(--cor-de-destaque);
-    color: var(--cor-clara);
-}
-
-header ul {
-    padding: 0;
-    list-style: none;
-}
-
-header li {
-    display: inline;
-    padding: 0 20px 0 20px;
-}
-
-header h1 {
-	font-family: var(--fonte-destaque);
-    float: left;
-    margin-top: 0px;
-    margin-bottom: 0;
-    font-size: 24px;
-}
-
-header h1 img {
-    margin-left: 100px;
-    height: 70px; /* Ajuste a altura da imagem conforme necessário */
-    width: auto;  /* Mantém a proporção da imagem */
-}
-
-header nav {
-    float: right;
-    margin-top: 20px;
 }
 
 main {
@@ -92,17 +20,34 @@ main {
 }
 
 .search-bar {
-    text-align: right;
-    margin: 40px 137px 20px;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px 20px 150px;
 }
 
 .search-bar input {
-    padding: 10px;
-    font-size: 16px;
-    width: 80%;
-    max-width: 500px;
-    border: 2px solid var(--cor-intermediaria);
-    border-radius: 5px;
+    font-family: var(--fonte-texto);
+    font-size: 1em;
+    width: 500px;
+    margin-left: 50px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px 0 0 20px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    border: none;
+    background-color: var(--cor-secundaria-intermediaria);
+    font-family: var(--fonte-texto);
+    font-size: 1em;
+    color: #fff;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: var(--cor-de-destaque);
 }
 
 .job-overview {
@@ -120,9 +65,9 @@ main {
 }
 
 .job-card {
-    background: var(--cor-intermediaria);
+    background: var(--cor-secundaria);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     cursor: pointer;
 }
@@ -138,16 +83,16 @@ main {
 }
 
 .job-card p {
-    font-size: 1em;
+    font-size: 1.1em;
     color: white;
     margin-bottom: 5px;
-}
 
+}
 .job-details {
     flex: 2;
-    background: var(--cor-clara);
+    background: var(--cor-secundaria-clara);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     font-size: 1.2em;
 }
@@ -157,6 +102,7 @@ main {
 }
 
 .job-detail-card h2 {
+    text-align: center;
     font-family: var(--fonte-destaque);
     color: var(--cor-de-destaque);
     margin-bottom: 10px;
@@ -164,19 +110,22 @@ main {
 
 .job-detail-card p {
     font-size: 1em;
-    color: var(--cor-de-destaque);
+    color: black;
     margin-bottom: 10px;
 }
 
+
 .btn-primary {
     background: var(--cor-secundaria);
-    color: white;
+    font-family: var(--fonte-destaque);
+    text-transform: uppercase;
+    color: var(--cor-clara);
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 25px;
+    margin-top: 20px;
     display: inline-block;
-    margin-top: 10px;
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 .btn-primary:hover {
